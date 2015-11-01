@@ -448,6 +448,18 @@ a:hover {
 	content: '\e810';
 }
 
+.tr-icon--google-plus:after {
+	content: '\e811';
+}
+
+.tr-icon--zip:after {
+	content: '\e812';
+}
+
+.tr-icon--tar:after {
+	content: '\e813';
+}
+
 @media screen and (max-width: 40em) {
 	.bp-header {
 		padding: 50px 20px 1em;
