@@ -1,130 +1,165 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" class="no-js">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>ТелеРос &mdash; унифицированная система контроля звонков УПАТС Avaya</title>
-
-  <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ТелеРос — тарификатор для АТС</title>
+	<meta name="description" content="Бесплатная унифицированная система контроля входящих/исходящих звонков для любой УПАТС" />
+	<meta name="keywords" content="телерос, teleros, jrate, тарификатор" />
+	<meta name="author" content="Arsen Bespalov" />
+	<meta name="google-site-verification" content="VhzVvjDHd3x1-kl_RLVCbewWg5x9KdzNBMXoGd-oFTI" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
 </head>
+
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ТелеРос</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Главная</a></li>
-      </ul>
+	<!-- navigation -->
+	<nav class="pages-nav">
+		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Главная</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-docu">Документация</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-download">Загрузка</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Блог</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Платный функционал</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Контакты</a></div>
+		<div class="pages-nav__item pages-nav__item--social">
+			<a class="link link--social link--faded" href="https://github.com/LimyDesign/TeleRos"><i class="tr-icon tr-icon--github"></i><span class="text-hidden">Github</span></a>
+			<a class="link link--social link--faded" href="https://twitter.com/hashtag/ТелеРос"><i class="tr-icon tr-icon--twitter"></i><span class="text-hidden">Twitter</span></a>
+			<a class="link link--social link--faded" href="https://www.facebook.com/teleros.pbx"><i class="tr-icon tr-icon--facebook"></i><span class="text-hidden">Facebook</span></a>
+			<a class="link link--social link--faded" href="https://vk.com/teleros"><i class="tr-icon tr-icon--vk"></i><span class="text-hidden">Вконтакте</span></a>
+			<a class="link link--social link--faded" href="#"><i class="tr-icon tr-icon--youtube"></i><span class="text-hidden">YouTube</span></a>
+		</div>
+	</nav>
+	<!-- /navigation-->
+	<!-- pages stack -->
+	<div class="pages-stack">
+		<!-- page -->
+		<div class="page" id="page-home">
+			<!-- Blueprint header -->
+			<header class="bp-header cf">
+				<span class="bp-header__present gradient">Тарификатор</span>
+				<h1 class="bp-header__title huge logo">ТелеРос</h1>
+				<p class="bp-header__desc">Бесплатная унифицированная система контроля входящих/исходящих звонков для офисных АТС и не только.</p>
+				<p class="info">Хорошо когда официально бесплатно и с хорошей поддержкой? Вот именно такой продукт мы предлагаем. Совершенно уникальный для рынка телекоммуникаций, который развивается с каждым днем все больше и больше. Мы хотим Вам его подарить. Забирайте!</p>
+				<span class="bp-header__present light-green"><i class="tr-icon tr-icon--rocket"></i> Быстрая как Джеки Чан <span class="bp-tooltip tr-icon tr-icon--help" data-content="Стараясь создать максимально удобный продукт абсолютно для всех пользователей мы его сделали офигенно быстрым. Зацените сами насколько он молниеносен."></span></span>
+				<span class="bp-header__present light-green lighten-1"><i class="tr-icon tr-icon--users"></i> Для всех и каждого <span class="bp-tooltip tr-icon tr-icon--help" data-content="В наше время странно уже ограничиваться доступом только для руководителей или топ-менеджеров. Пускай даже уборщица смотрит куда звонила и в свой самый лучший день на свете."></span></span>
+				<span class="bp-header__present light-green lighten-2"><i class="tr-icon tr-icon--cog"></i> Настрой что хочешь <span class="bp-tooltip tr-icon tr-icon--help" data-content="Многие разработчики создавая продукт забывают про потребности пользователей ограничивая их рамками скудных настроек. А мы ничем не ограничиваем — пускай творят что захотят, ведь это их продукт."></span></span>
+				<span class="bp-header__present light-green lighten-3"><i class="tr-icon tr-icon--chart-pie"></i> Отчёты - графики <span class="bp-tooltip tr-icon tr-icon--help" data-content="Для наших любимых руководителей и топ-менеджеров есть возможность все красивенько посмотреть в отчетах и даже в графическом представлении."></span></span>
+				<span class="bp-header__present light-green lighten-4"><i class="tr-icon tr-icon--key"></i> Явки, пароли <span class="bp-tooltip tr-icon tr-icon--help" data-content="Удобная система авторизации, без занудных и труднозапоминаемых логинов. В будущем мы реализуем NTML-авторизацию. Чего только мы не сделаем ради любимых пользователей."></span></span>
+				<span class="bp-header__present light-green lighten-5"><i class="tr-icon tr-icon--rostest"></i> Из России с любовью <span class="bp-tooltip tr-icon tr-icon--help" data-content="Сделано в России со знаком качества! Наш продукт полностью адаптирован для русского пользователя и в целом предназначен для русских — для нас это одно из преимуществ. Пускай буржуи завидуют!"></span></span>
+			</header>
+			<img class="poster" src="images/bg_home.jpg" alt="img01" />
+		</div>
+		<!-- /page -->
+		<div class="page" id="page-docu">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title docu">Инструкция по эксплуатации</h1>
+				<p class="bp-header__desc">В случае возникновения вопросом просьба обращаться по мылу: <a href="mailto:support@jrate.ru">support@jrate.ru</a></p>
+				<p class="info">
+						Документация находится в стадии редактирования и наполнения. Пока советуем разбираться самостоятельно. Обычно так поступают все русские люди. Если вы не в большинстве, дождитесь публикации документации, возможно, это произойдет скоро.
+				</p>
+			</header>
+			<img class="poster" src="images/bg_docu.jpg" alt="img06" />
+		</div>
+		<div class="page" id="page-download">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title download">Загрузка тарификатора «ТелеРос»</h1>
+				<p class="bp-header__desc">Просьба качать самую последнюю релизную версию во избежания ловли багов. Однако мы не рекомендуем скачивать версию для разработчиков, т.к. она обновляется очень часто и туда могут попадать разные не отловленные баги.</p>
+				<p class="info">
+					Версия 1.0.0:
+				</p>
+				<nav class="bp-nav">
+					<a class="bp-nav__item tr-icon tr-icon--archive" href="https://github.com/LimyDesign/TeleRos/archive/v1.0.0.zip" data-info="скачать zip архив"><span>Zip</span></a>
+					<a class="bp-nav__item tr-icon tr-icon--archive" href="https://github.com/LimyDesign/TeleRos/archive/v1.0.0.tar.gz" data-info="скачать tar.gz архив"><span>Tar.Gz</span></a>
+				</nav>
+				<p class="info">
+					Версия для разработчиков:
+				</p>
+				<nav class="bp-nav">
+					<a class="bp-nav__item tr-icon tr-icon--git" href="https://github.com/LimyDesign/TeleRos.git" data-info="перейти в git репозиторий"><span>Git</span></a>
+					<a class="bp-nav__item tr-icon tr-icon--archive" href="https://github.com/LimyDesign/TeleRos/archive/master.zip" data-info="скачать zip архив"><span>Zip</span></a>
+				</nav>
+			</header>
+			<img class="poster" src="images/bg_download.jpg" alt="img02" />
+		</div>
+		<!-- <div class="page" id="page-software">
+				<header class="bp-header cf">
+						<h1 class="bp-header__title">Software &amp; Downloads</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+								"I decided to pick the diet that I thought would maximize my chances of long-term survival." &mdash; Al Gore
+						</p>
+				</header>
+				<img class="poster" src="images/3.jpg" alt="img03" />
+		</div>
+		<div class="page" id="page-custom">
+				<header class="bp-header cf">
+						<h1 class="bp-header__title">Customization &amp; Settings</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+								"You have to make a conscious decision to change for your own well-being, that of your family and your country." &mdash;Bill Clinton
+						</p>
+				</header>
+				<img class="poster" src="images/4.jpg" alt="img04" />
+		</div>
+		<div class="page" id="page-training">
+				<header class="bp-header cf">
+						<h1 class="bp-header__title">Training &amp; Learning Center</h1>
+						<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+						<p class="info">
+								"The moment I began to understand what was going on with the treatment of animals, it led me more and more in the way of the path I am [on] now, which is a complete vegan." &mdash; Bryan Adams
+						</p>
+				</header>
+				<img class="poster" src="images/5.jpg" alt="img05" />
+		</div> -->
+		<div class="page" id="page-blog">
+				<header class="bp-header cf">
+						<h1 class="bp-header__title blog">Самые свежие новости от разработчиков</h1>
+						<p class="bp-header__desc">Хотите знать что происходит на фронте разработок ТелеРос? Не вопрос! Читайте блог.</p>
+						<h2>В ожидании 2-ой версии</h2>
+						<p class="info">
+							Вот уже почти год готовиться к выпуску новая версия продукта. Новинка обещает быть крутой, обладать суперским функционалом и иметь интеграцию не только с одной АТС Avaya CM, но и иметь возможность подключать любые другие АТС, которые могут передавать CDR или SMDR данные по TCP/IP стеку или по COM-порту. Также помимо прочего будет встроен сервис расширенного определения номеров, т.е. каждому номеру будет присваиваться имя. Данные будут браться в реальном времени из справочника 2ГИС.
+						</p>
+				</header>
+				<img class="poster" src="images/bg_blog.jpg" alt="img01" />
+		</div>
+		<div class="page" id="page-buy">
+				<header class="bp-header cf">
+						<h1 class="bp-header__title buy">Расширенный платный функционал</h1>
+						<p class="bp-header__desc">Почти вся система тарификации абсолютно бесплатна, но есть некоторые опции за которые придётся заплатить небольшую денежку.</p>
+						<p class="info">
+							«ТелеРос» умный тарификатор, помимо всех его возможностей, имеет супер возможность сразу же показывать какая фирма или какой человек звонили вам, а также показывать куда именно проходили звонки.
+						</p>
+						<p class="info">
+							Никаких дополнительных установок не требуется. Просто зарегистрируйтесь на <a href="https://www.cnamrf.ru">www.cnamrf.ru</a>, пополните там же баланс, выберите тарифный план, введите ключ в «ТелеРос» и пользуйтесь с удовольствием.
+						</p>
+				</header>
+				<img class="poster" src="images/bg_buy.jpg" alt="img06" />
+		</div>
+		<div class="page" id="page-contact">
+				<header class="bp-header cf">
+						<h1 class="bp-header__title contact">Пишите, звоните, контактируйте...</h1>
+						<p class="bp-header__desc">Мы готовы выслушать вас в любой момент времени, ведь мы работаем не в офисе, а в Интернете.</p>
+						<p class="info">
+							Если есть идеи и предложения напишите нам их по электропочте: <a href="mailto:support@jrate.ru">support@jrate.ru</a>.
+						</p>
+						<p class="info">
+							Если у вас есть какие-то срочные вопросы, тогда звоните: <a href="tel:+74997046917">+7 (499) 704-69-17</a>
+						</p>
+						<p class="info">
+							А тек, кто знает наш адрес, могут приходить к нам в гости, мы вас угостим хорошим чаем и накормим вкусными печенками.
+						</p>
+				</header>
+				<img class="poster" src="images/bg_contact.jpg" alt="Контакты" />
+		</div>
+	</div>
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Меню</span></button>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+</body>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Главная</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">ТелеРос</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Бесплатная унифицированная система контроля входящих/исходящих звонков на УПАТС Avaya</h5>
-      </div>
-      <div class="row center">
-        <a href="https://github.com/LimyDesign/TeleRos/archive/master.zip" id="download-button" class="btn-large waves-effect waves-light orange">Скачать</a>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="mdi-image-flash-on"></i></h2>
-            <h5 class="center">Быстрая как Джеки&nbsp;Чан</h5>
-
-            <p class="light">Стараясь создать максимально удобный продукт абсолютно для всех пользователей мы его сделали офигенно быстрым. Зацените сами насколько он молниеносен.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="mdi-social-group"></i></h2>
-            <h5 class="center">Для всех и каждого</h5>
-
-            <p class="light">В наше время странно уже ограничиваться доступом только для руководителей или топ-менеджеров. Пускай даже уборщица смотрит куда звонила и в свой самый лучший день на свете.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="mdi-action-settings"></i></h2>
-            <h5 class="center">Настрой что хочешь</h5>
-
-            <p class="light">Многие разработчики создавая продукт забывают про потребности пользователей ограничивая их рамками скудных настроек. А мы ничем не ограничиваем &mdash; пускай творят что захотят, ведь это их продукт.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-
-    <div class="section">
-      <div class="row">
-        <div class="col s12">
-          <h3 class="center">Появились вопросы?</h3>
-          <p class="light center">Не пыхтите &mdash; напишите или позвоните:</p>
-          <p class="center">
-            <a href="mailto:support@jrate.ru" class="btn waves-effect waves-light">
-              Написать
-              <i class="mdi-communication-email right"></i>
-            </a>
-            <a href="tel:+74997046917" class="btn waves-effect waves-light">
-              Позвонить
-              <i class="mdi-communication-call right"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m8 offset-m2">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title truncate">Дареному коню в зубы не смотрят!</span>
-              <p>Наш продукт бесплатный и с открытыми исходниками, которые можно изменять как захочется, да и более того, мы даже включим ваши изменения в релизную версию, если ваши доработки окажутся действительно нужными. Отсюда мы не принимаем никаких претензий, а на любые оные мы отвечаем: «Фуууууу!»</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <h5 class="white-text">Кратенько</h5>
-          <p class="grey-text text-lighten-4">Этот продукт изначально создавался проприетарным (коммерческим/платным), но многие годы в разработке и влияние Великого Русского Кризиса заставили нас сделать самую лучшую нашу разработку бесплатной. С вводом бесплатной версии мы осознали значимость нашего вклада в мир людей и решили также обновить саму систему. Вот так и получился наш продукт, которым мы гордимся.</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Разработано <a class="orange-text text-lighten-3" href="http://limydesign.ru">LimyDesign Studio</a>. Все также с любовью из России! Пользуйтесь на здоровье!
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
 </html>
