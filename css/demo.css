@@ -308,6 +308,7 @@ a:hover {
 	text-transform: none;
 	color: #fff;
 	background: #5c5edc;
+	z-index: 9999;
 }
 
 .bp-nav {
